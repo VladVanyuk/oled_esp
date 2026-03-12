@@ -18,7 +18,7 @@ typedef union out_column_t {
 void ssd1306_init(SSD1306_t * dev, int width, int height)
 {
 	if (dev->_address == SPI_ADDRESS) {
-		spi_init(dev, width, height);
+		// spi_init(dev, width, height);
 	} else {
 		i2c_init(dev, width, height);
 	}
